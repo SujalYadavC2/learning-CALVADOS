@@ -32,4 +32,4 @@ defaults:
   ptm_locations: []
   fresidues: /home/sujaly/Desktop/github/learning-CALVAODS/Single-chain_IDR_simulations/A1-SLCD/input/residues_CALVADOS2.csv
 system:
-  FUSRGG3: {}
+  A1SLCD: {}

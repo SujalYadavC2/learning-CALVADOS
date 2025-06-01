@@ -27,6 +27,6 @@ components = Components(
     ffasta = f'{cwd}/input/idr.fasta',
 )
 
-components.add(name='FUSRGG3')
+components.add(name='A1SLCD')
 
 components.write(path,'components.yaml')
