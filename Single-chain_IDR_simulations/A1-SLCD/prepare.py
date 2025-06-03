@@ -2,7 +2,7 @@ import os
 from calvados.cfg import Config, Components
 
 cwd = os.getcwd()
-sysname = 'A1SLCD'
+sysname = 'sim'
 
 config = Config(
     sysname = sysname,
@@ -11,8 +11,9 @@ config = Config(
     pH = 7.5,
     ionic = 0.19,
 
-    wfreq = 100,
-    steps  = 1010*100   
+    wfreq = 1000,
+    steps = 1010*1000,
+    verbose = True,
 )
 
 path = f'{cwd}/{sysname}'

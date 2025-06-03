@@ -3,7 +3,7 @@ defaults:
   nmol: 1
   charge_termini: both
   alpha: 0
-  ffasta: /home/sujaly/Desktop/github/learning-CALVAODS/Single-chain_IDR_simulations/A1-SLCD/input/idr.fasta
+  ffasta: /home/sujaly/Desktop/github/learning-CALVADOS/Single-chain_IDR_simulations/A1-SLCD/input/idr.fasta
   kb: 8033.0
   ext_restraint: true
   restraint: false
@@ -30,6 +30,6 @@ defaults:
   n_ends: 1
   ptm_name: example_ptm
   ptm_locations: []
-  fresidues: /home/sujaly/Desktop/github/learning-CALVAODS/Single-chain_IDR_simulations/A1-SLCD/input/residues_CALVADOS2.csv
+  fresidues: /home/sujaly/Desktop/github/learning-CALVADOS/Single-chain_IDR_simulations/A1-SLCD/input/residues_CALVADOS2.csv
 system:
   A1SLCD: {}
