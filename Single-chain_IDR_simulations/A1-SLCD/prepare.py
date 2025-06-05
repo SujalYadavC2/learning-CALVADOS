@@ -11,8 +11,8 @@ config = Config(
     pH = 7.5,
     ionic = 0.19,
 
-    wfreq = 1000,
-    steps = 1010*1000,
+    wfreq = 7000,
+    steps = 1010*7000,
     verbose = True,
 )
 

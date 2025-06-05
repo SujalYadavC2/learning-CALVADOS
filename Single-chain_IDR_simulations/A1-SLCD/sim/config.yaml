@@ -37,11 +37,11 @@ runtime: 0
 slab_eq: false
 slab_outer: 40
 slab_width: 100
-steps: 1010000
+steps: 7070000
 steps_eq: 1000
-sysname: A1SLCD
+sysname: sim
 temp: 273
 threads: 1
 topol: center
 verbose: true
-wfreq: 1000
+wfreq: 7000
