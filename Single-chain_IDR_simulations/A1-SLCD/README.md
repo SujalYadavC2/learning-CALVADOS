@@ -14,7 +14,4 @@
 
 ![Local Image](./analysis/last_frame.png)
 
-<video width="640" height="360" controls>
-  <source src="contact_map.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+To see how the map evolve in time [Watch the video](https://user-images.githubusercontent.com/contact_map.mp4)
