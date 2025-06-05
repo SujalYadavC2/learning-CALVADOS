@@ -1,3 +1,11 @@
-I try to simulate the low-complexity domain (LCD) of the heterogeneous nuclear ribonucleoprotein (hnRNPA1*),
-hereafter A1-LCD*, with * indicating a sequence missing the hexa-peptide 259–264.
+# A1-LCD* Simulation (70.7 ns)
 
+**Environment**
+- `box` = [50,50,50] nm
+- `temp` = 273 K,
+- `pH` = 7.5,
+- `ionic` = 0.19
+
+**Contact Map**: Distance between residues
+
+![Local Image](./analysis/first_frame.png) ![Local Image](./analysis/middle_frame.png)

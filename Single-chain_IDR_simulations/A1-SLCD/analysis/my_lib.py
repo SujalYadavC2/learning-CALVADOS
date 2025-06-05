@@ -50,7 +50,7 @@ class Analysis:
             plt.gca().invert_yaxis()
             plt.xlabel("Residue")
             plt.ylabel("Residue")
-            plt.title("Distance between residues (nm)")
+            plt.title(f"Distance between residues (nm). frame: {self.current_frame}/{len(self.universe.trajectory)}")
             plt.show()
 
         else:
