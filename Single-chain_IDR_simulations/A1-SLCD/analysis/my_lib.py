@@ -96,5 +96,6 @@ class Analysis:
                 ax.set_title(f"frame {frame}")
                 return ax.collections
             
-            ani = FuncAnimation(fig, update, frames=len(self.universe.trajectory[1:]), interval=1)
+            ani = FuncAnimation(fig, update, frames=len(self.universe.trajectory[1:]), interval=100)
+            ani.save("contact_map.mp4")
             plt.show()    
