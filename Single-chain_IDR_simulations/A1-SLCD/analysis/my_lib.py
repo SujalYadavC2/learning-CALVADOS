@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
+import seaborn as sns
 
 # What i want to do is, you put you MDAnalysis universe and the frame of you need conatct map
 
@@ -99,3 +100,29 @@ class Analysis:
             ani = FuncAnimation(fig, update, frames=len(self.universe.trajectory[1:]), interval=100)
             ani.save("contact_map.mp4")
             plt.show()    
+    
+    def plot_radius_of_gyration(self) -> None:
+
+        time = []
+        rgyr = []
+        
+        for ts in self.universe.trajectory:
+            time.append(self.universe.trajectory.time)
+            rgyr.append(self.universe.atoms.radius_of_gyration())
+
+        plt.plot(time, np.array(rgyr)/10)
+        plt.xlabel(f"time (ps)")
+        plt.ylabel("Radius of Gyration (nm)")
+        plt.show()
+
+    def probability_rgyr(self) ->  None:
+        rgyr = []
+        
+        for ts in self.universe.trajectory:
+            rgyr.append(self.universe.atoms.radius_of_gyration())
+        
+        sns.kdeplot(np.array(rgyr)/10)
+        plt.ylabel("p(r)")
+        plt.xlabel("radius of gyration (nm)")
+        plt.show()
+
