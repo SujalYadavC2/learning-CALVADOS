@@ -2,7 +2,7 @@ import os
 from calvados.cfg import Config, Components
 
 cwd = os.getcwd()
-sysname = 'FUSRGG3'
+sysname = 'sim'
 
 config = Config(
     sysname = sysname,
@@ -11,8 +11,8 @@ config = Config(
     pH = 7.5,
     ionic = 0.19,
 
-    wfreq = 1000,
-    steps  = 1010*1000,   
+    wfreq = 7000,
+    steps  = 1010*7000,   
     restart = 'checkpoint',
     frestart = 'restart.chk',
     verbose = True,

@@ -7,7 +7,8 @@ sysname = 'sim'
 config = Config(
     sysname = sysname,
     box = [50,50,50], #nm
-    temp = 273,
+    temp = 273,ls
+    
     pH = 7.5,
     ionic = 0.19,
 

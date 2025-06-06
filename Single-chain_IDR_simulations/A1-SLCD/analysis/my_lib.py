@@ -15,6 +15,12 @@ class Analysis:
         self.num_beads = self.universe.atoms.n_atoms
 
     def set_frame(self, frame) -> bool:
+
+        if frame == None:
+            self.current_frame = frame
+
+            return True
+
         self.universe.trajectory[frame]
 
         self.current_frame = frame
